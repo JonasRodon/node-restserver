@@ -41,7 +41,7 @@ app.post('/login', (req, res) => {
   })
 })
 // Configuraciones de Google
-async function verify(token) {
+async function verify (token) {
   const ticket = await client.verifyIdToken({
     idToken: token,
     audience: process.env.CLIENT_ID
